@@ -1,12 +1,16 @@
-import http from "http";
-import date from "./date";
-import getURL from "./getURL";
+import http from 'http';
+import { myDateTime } from './date.js';
+import { getPath, getParamsURL } from './getURL.js';
 
-http.createServer((req, res) => {
-    res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-    res.write(date() + "<br>");
-    res.write(getURL.getPath(req) + "<br>");
-    res.write(getURL.getParamsURL(req) + "<br>");
-    res.write("Hello KTPM0121, chúc bạn thành công với Nodejs");
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/html;charset=utf-8' });
+    res.write(myDateTime() + "<br>");
+    res.write(getPath(req) + "<br>");
+    res.write(getParamsURL(req) + "<br>");
+    res.write('Hello KTPM0121, chúc bạn thành công với Nodejs');
     res.end();
-}).listen(8080);
+});
+
+server.listen(8080, () => {
+    console.log('Server is listening on port 8080');
+});

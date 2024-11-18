@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/listUser.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header -->
+<%- include('headerClient') %>
+
+<!-- Content -->    
+<div class="content" >
+    <div class="container bootstrap snippets bootdey">
+
+        <div class="header">
+          <h3 class="text-muted prj-name">
+              <span class="fa fa-users fa-2x principal-title"></span>
+              Thông tin người dùng
+          </h3>
+        </div>
+      
+      
+        <table class="jumbotron list-content">
+            <ul class="list-group">
+                <tr href="#" class="list-group-item title">
+                    <th>STT</th>
+                    <th>Hình ảnh</th>
+                    <th>Tên người dùng</th>
+                    <th>Họ tên</th>
+                    <th>Địa chỉ</th>
+                </tr>
+
+                <% for(let i=0;i<data.listUsers.length;i++) { %>
+                <tr href="#" class="list-group-item text-left">
+                    <td><%= i+1 %></td>
+                    <td><img class="img-thumbnail"  src="https://bootdey.com/img/Content/user_1.jpg"></td>
+                    <td >
+                        <%= data.listUsers[i].username %>
+                    </td>
+                    <td class="name" >
+                        <%= data.listUsers[i].fullname %>
+                    </td>
+                    <td >
+                        <%= data.listUsers[i].address %>
+                    </td>      
+                 
+                </tr>
+                <% } %> 
+            </ul>
+        </table>
+    </div>
+</div>     
+
+    
+
+ <!-- Footer -->
+ <%- include('footer') %>
+</body>
+</html>

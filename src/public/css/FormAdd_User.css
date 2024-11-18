@@ -1,0 +1,32 @@
+.fieldset {
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.content .input-group input {
+    width: 100%;
+    margin: 10px auto;
+    height: 35px;
+    padding: 0 10px;
+
+}
+
+.btn {
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+    justify-content: center;
+}
+
+.btnAdd_User {
+    border-radius: 10px;
+
+    width: 100px;
+    cursor: pointer;
+    background-color: rgb(240, 239, 236);
+}
+
+.btnAdd_User:hover {
+    background-color: rgb(191, 190, 188);
+}

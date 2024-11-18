@@ -1,5 +1,5 @@
 const getContact = (req, res) => {
-    return res.render('contact')
+    res.render('contact')
 }
 
 export default getContact

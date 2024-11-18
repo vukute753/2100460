@@ -1,5 +1,5 @@
 const getAbout = (req, res) => {
-    return res.render('about')
+    res.render("about")
 }
 
 export default getAbout

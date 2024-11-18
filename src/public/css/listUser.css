@@ -1,0 +1,48 @@
+.list-content {
+    min-height: 300px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.list-content th {
+    text-align: left;
+}
+
+.list-content tr {
+    height: 30px;
+}
+
+
+
+.list-content .list-group .title {
+    background: #5bc0de;
+    border: 2px solid #DDDDDD;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.list-group-item img {
+    height: 80px;
+    width: 80px;
+}
+
+
+
+.jumbotron .btn {
+    padding: 5px 5px !important;
+    font-size: 12px !important;
+}
+
+.prj-name {
+    margin: 10px 5px;
+    color: #5bc0de;
+}
+
+.break {
+    width: 100%;
+    margin: 20px;
+}
+
+.name {
+    color: #5bc0de;
+}

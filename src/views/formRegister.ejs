@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/formRegister.css">
+</head>
+<body>
+
+    <form action="/handleRegister" method="post">
+        <div class="container">
+          <h1>Đăng ký tài khoản</h1>
+    
+          <label for="email"><b>Tên đăng nhập</b></label>
+          <input type="text" placeholder="Tên đăng nhập" name="username" id="email" required>
+      
+          <label for="psw"><b>Nhập mật khẩu</b></label>
+          <input type="password" placeholder="Nhập mật khẩu" name="password" id="psw" required>
+      
+          <label for="psw-repeat"><b>Xác nhận mật khẩu</b></label>
+          <input type="password" placeholder="Xác nhận mật khẩu" name="password_repeat" id="psw-repeat" required>
+          <hr>
+      
+          <button type="submit" class="registerbtn">Đăng ký</button>
+        </div>
+      
+        <div class="container signin">
+          <p>Bạn đã có tài khoản? <a href="/login">Đăng nhập</a>.</p>
+        </div>
+      </form>
+    
+</body>
+</html>
